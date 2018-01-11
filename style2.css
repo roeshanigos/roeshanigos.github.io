@@ -1,0 +1,36 @@
+
+.wrapper {
+	display: table;
+	position: absolute;
+	top: 48%;
+	left:50%;
+	margin-left: -160px;
+	margin-top: -42px;
+}
+
+
+i {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+.wrapper a:nth-child(1) {
+  color: #0077B5;
+
+}
+
+
+
+
+
+.wrapper a:nth-child(2) {
+  color: #DD4B39;
+
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+

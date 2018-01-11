@@ -1,0 +1,36 @@
+
+
+h1 {
+	font-family: "Open Sans";
+	font-size: 150px;
+	color: rgb(106,0,30);
+	text-align: center;
+	font-weight: 300;
+}
+
+li {
+	display: inline;
+	margin: 20px;
+	font-family: "Open Sans";
+	font-size: 40px;
+	font-weight: 300;
+}
+
+li:hover {
+	opacity: 0.5;
+}
+
+nav {
+	text-align: center;
+
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: black ;
+}
+
+
+
+
+
