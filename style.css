@@ -1,4 +1,6 @@
-
+body {
+	background-image: "backgrnd.jpeg";
+}
 
 h1 {
 	font-family: "Open Sans";
