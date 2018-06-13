@@ -18,7 +18,7 @@ header {
 .name {
 	font-family: "Open Sans";
 	color: white;
-	font-size: 8vw;
+	font-size: 90px;
 	font-weight: 300;
 	text-shadow: 1px 1px 5px #66666666;
 	text-align: center;
@@ -32,17 +32,17 @@ header {
 	font-family: "Open Sans";
 	color: white;
 	opacity: 0.9;
-	width: 100%;
+	border: 0.5px solid white;
+	width: 230px;
 	height: 30px;
 	padding: 5px;
 	margin: 0px auto;
-	font-size: 2vw;
+	font-size: 20px;
 	font-weight: 100;
 	text-shadow: 5px 5px 5px #66666666;
 	text-align: center;
     
 }
-
 
 .nav {
 	width: 100%;
