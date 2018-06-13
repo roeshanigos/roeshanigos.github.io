@@ -43,6 +43,9 @@ header {
     
 }
 
+.nav {
+	width: 100%;
+}
 .nav ul {
 	list-style: none;
 	width: 800px;
