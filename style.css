@@ -34,7 +34,6 @@ header {
 	opacity: 0.9;
 	border: 0.5px solid white;
 	width: 230px;
-	height: 30px;
 	padding: 5px;
 	margin: 0px auto;
 	font-size: 20px;
@@ -44,53 +43,62 @@ header {
     
 }
 
-.nav {
+.static-nav {
 	width: 100%;
-}
-.nav ul {
-	list-style: none;
-	width: 800px;
 	overflow: hidden;
-	margin:0px auto;
+	z-index:30;
+	position: relative;
+
 }
 
-.nav li {
+
+.static-nav a { 
 	float: left;
-	width: 120px;
-	height: 40px;
-	display: inline-block;
-	margin: 0px 40px;
-
-}
-
-.nav a { 
+	display: inline;
+	color: #ddd;
+	text-align: center;
+	width: 110px;
+	padding: 16px 0px;
 	text-decoration: none;
-	width: 120px;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	display: block;
-	font-family: "Open Sans";
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 100;
-	color: white;
+	font-family: "Open Sans";
+
+}
+.static-nav div {
+	width: 440px;
+	margin: 0 auto;
+}
+#about {
+	overflow: hidden;
+	text-align: left;
+	margin: 0 0;
+	padding: 10px;
+	
+}
+#about .image {
+	width: 60%;
 
 }
 
-#about {
-	height: 1000px;
-	overflow: hidden;
-	text-align: center;
-	margin: 0 auto;
-	padding: 10px;
+#about .desc {
+	width: 40%;
+	margin: 0 15% 0 45%;
 }
 
 #about h2 {
 	font-family: "Open Sans";
 	width: 120px;
-	text-align: center;
-	margin: 0 auto;
+	text-align: left;
 	padding: 10px;
+}
+
+#about p {
+	width: 100%;
+	text-align: left;
+	padding: 15px;
+	font-family: "Open Sans";
+	font-size: 18px;
 }
 
 li:hover {
@@ -102,17 +110,168 @@ a:link, a:visited {
 	color: white; 
 }
 
-.moving-nav {
+
+
+.menu-toggle {
+	color:white;
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+}
+
+
+
+/*new styles*/
+.topnav {
+	overflow: hidden;
 	z-index:30;
 	position: fixed;
 	width: 100%;
-	background-color: #aeadad;
-	opacity: 0.7;
+	background-color: grey;
+
 }
 
-.moving-nav a {
+.topnav div {
+	width: 440px;
+	margin: 0 auto;
+}
+
+.topnav a {
+	float: left;
+	display: inline;
+	color: #ddd;
+	text-align: center;
+	width: 110px;
+	padding: 16px 0px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 100;
+	font-family: "Open Sans";
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.active {
+	background-color: #4CAF50;
 	color: white;
+}
+
+.topnav .icon, .static-nav .icon {
+	display: none;
+} 
+
+@media screen and (max-width: 600px) {
+	.topnav a, .static-nav a {
+		display: none;
+		
+	}
+
+	.topnav a.icon, .static-nav a.icon{
+		float: right;
+		display: block;
+	}
+
+	.topnav div, .static-nav div{
+		width: 100%;
+	}
+
+	.name {
+		font-size: 58px;
+
+	}
+
+	.more-about {
+		font-size: 15px;
+		width:170px;
+		padding: 5px 3px;
+	}
 
 }
+
+@media screen and (max-width: 600px) {
+	.topnav.responsive{
+		overflow: hidden;
+		z-index:30;
+		position: fixed;
+		width: 100%;
+		background-color: grey;
+		
+
+	}
+
+	.static-nav.responsive {
+		overflow: hidden;
+		z-index:30;
+		position: fixed;
+		width: 100%;
+		background-color: grey;
+	
+
+	}
+	.topnav.responsive .icon, .static-nav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a, .static-nav.responsive a{
+		float: none;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		opacity: 1;
+	}
+}
+
+
+
+#contact {
+	height: 1000px;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#contact a{
+	z-index: 30;
+}
+
+#contact h2 {
+	font-family: "Open Sans";
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+ #contact .wrapper {
+	display: table;
+	position: absolute;
+	width: 300px;
+	margin: 0px auto;
+}
+
+#contact .wrapper i {
+	padding: 5px;
+}
+
+
+#contact .wrapper a:nth-child(1) {
+  color: #0077B5;
+
+}
+
+#contact .wrapper a:nth-child(2) {
+  color: #DD4B39;
+
+}
+
+#contact .wrapper a:hover {
+    opacity: 0.7;
+}
+
 
 
