@@ -70,20 +70,31 @@ header {
 	margin: 0 auto;
 }
 #about {
-	overflow: hidden;
-	text-align: left;
 	margin: 0 0;
 	padding: 10px;
-	
+
 }
+#about img {
+/*	min-width:200px;*/  
+	height: 35%;
+	width: 35%;
+	margin-left: 50%;
+    border-radius: 50%;
+}
+
 #about .image {
-	width: 60%;
-
+	height: 100%;
+	width: 35%;
+	margin: 0;
+	display: inline-block;
 }
-
 #about .desc {
-	width: 40%;
-	margin: 0 15% 0 45%;
+	height: 100%;
+	width: 55%;
+	display: inline-block;
+	/*min-width:200px;*/
+/*    border: solid 1px black;*/    
+
 }
 
 #about h2 {
@@ -94,6 +105,7 @@ header {
 }
 
 #about p {
+	height: 100%;
 	width: 100%;
 	text-align: left;
 	padding: 15px;
@@ -197,8 +209,7 @@ a:link, a:visited {
 		z-index:30;
 		position: fixed;
 		width: 100%;
-		background-color: grey;
-		
+		background-color: grey;	
 
 	}
 
@@ -223,6 +234,11 @@ a:link, a:visited {
 		text-align: center;
 		opacity: 1;
 	}
+
+	#about .desc {
+		display: block;
+	}
+
 }
 
 
