@@ -1,0 +1,120 @@
+:root {
+  --primary-blue: #4BA3D1;
+  --secondary-blue: #5CB3E0;
+  --dark-blue: #3A8BB8;
+  --card-white: #FFFFFF;
+  --text-dark: #2C3E50;
+  --text-light: #FFFFFF;
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #4BA3D1 0%, #5CB3E0 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* navbar handles top spacing */
+  position: relative; 
+}
+
+/* Main Content */
+.app-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 1rem; /* Padding only for main content */
+  position: relative;
+  z-index: 100; /* Above weather animations */
+}
+
+.weather-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  z-index: 100; /* Above weather animations */
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  color: white;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Error State */
+.error {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-medium);
+}
+
+.error p {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.error button {
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.error button:hover {
+  background: var(--dark-blue);
+}

@@ -1,0 +1,181 @@
+.dark-mode {
+  --primary-blue: #1e3a5f;
+  --secondary-blue: #15406e;
+  --dark-blue: #152a45;
+  --card-white: #1a1a2e;
+  --text-dark: #e0e0e0;
+  --text-light: #ffffff;
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* background */
+.dark-mode {
+  background: linear-gradient(180deg, #0f1624 0%, #1a1a2e 100%);
+}
+
+.dark-mode body {
+  background: linear-gradient(180deg, #0f1624 0%, #1a1a2e 100%);
+}
+
+/* navbar */
+.dark-mode .navbar {
+  background: linear-gradient(135deg, #1e3a5f 0%, #15406e 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .brand-text {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .search-form {
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .search-input {
+  color: #ffffff;
+}
+
+.dark-mode .search-input::placeholder {
+  color: #a0a0a0;
+}
+
+.dark-mode .search-button {
+  background: #15406e;
+}
+
+.dark-mode .search-button:hover:not(:disabled) {
+  background: #1e3a5f;
+}
+
+.dark-mode .current-weather-card {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  color: #e0e0e0;
+}
+
+.dark-mode .current-weather-header {
+  color: #b0b0b0;
+}
+
+.dark-mode .location {
+  color: #e0e0e0;
+}
+
+.dark-mode .date {
+  color: #a0a0a0;
+}
+
+.dark-mode .current-temp {
+  color: #ffffff;
+}
+
+.dark-mode .weather-description {
+  color: #b0b0b0;
+}
+
+.dark-mode .weather-detail {
+  color: #a0a0a0;
+}
+
+
+.dark-mode .city-and-date {
+  color: #e0e0e0;
+}
+
+/* forecast */
+
+.dark-mode .forecast-list {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.dark-mode .weather-card {
+  background: rgba(42, 90, 143, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .weather-card:hover {
+  background: rgba(42, 90, 143, 0.3);
+}
+
+.dark-mode .weather-card.today {
+  background: rgba(42, 90, 143, 0.4);
+}
+
+.dark-mode .card-header .date {
+  color: #e0e0e0;
+}
+
+.dark-mode .temp-high,
+.dark-mode .temp-low {
+  color: #ffffff;
+}
+
+.dark-mode .today-badge {
+  background: #15406e;
+  color: #ffffff;
+}
+
+/* temp toggle */
+.dark-mode .temperature-toggle {
+  background: rgba(42, 90, 143, 0.3);
+}
+
+.dark-mode .toggle-button {
+  color: #a0a0a0;
+  background: transparent;
+}
+
+.dark-mode .toggle-button.active {
+  background: #2a5a8f;
+  color: #ffffff;
+}
+
+.dark-mode .toggle-button:hover:not(.active) {
+  background: rgba(42, 90, 143, 0.2);
+  color: #e0e0e0;
+}
+
+/* loading */
+.dark-mode .loading {
+  color: #e0e0e0;
+}
+
+.dark-mode .spinner {
+  border-color: #15406e;
+  border-top-color: transparent;
+}
+
+.dark-mode .error {
+  background: rgba(231, 76, 60, 0.2);
+  color: #ff6b6b;
+  border: 1px solid rgba(231, 76, 60, 0.4);
+}
+
+.dark-mode .error button {
+  background: #e74c3c;
+}
+
+.dark-mode .error button:hover {
+  background: #c0392b;
+}
+
+
+.dark-mode .skyline-container svg {
+  opacity: 0.6;
+}
+
+/* Animations */
+.dark-mode .cloud {
+  opacity: 0.5;
+}
+
+.dark-mode .raindrop {
+  background: linear-gradient(to bottom, transparent, rgba(100, 150, 200, 0.7));
+}
+
+.dark-mode .snowflake {
+  opacity: 0.9;
+}

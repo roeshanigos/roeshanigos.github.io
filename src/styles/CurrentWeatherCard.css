@@ -1,0 +1,176 @@
+.current-weather-card {
+  background: white;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.current-weather-content-wrapper {
+  position: relative;
+  min-height: 450px;
+}
+
+.current-weather-body {
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: transparent;
+}
+
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.temperature-display {
+  display: flex;
+  align-items: center;
+  margin-right: -0.05rem;
+}
+
+.temp-large {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #5CB3E0;
+  line-height: 1;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.condition-text {
+  font-size: 1.2rem;
+  color: #2C3E50;
+  text-transform: capitalize;
+  color: #5CB3E0;
+  font-weight: 500;
+}
+
+.wind-speed {
+  font-size: 0.95rem;
+  color: #7F8C8D;
+}
+
+.toggle-container {
+  position: relative;
+}
+
+.skyline-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(180deg, #87CEEB 0%, #B8E0F0 100%);
+}
+
+.dallas-skyline {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .current-weather-header {
+    padding: 1.25rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .date {
+    font-size: 0.85rem;
+  }
+
+  .current-weather-content-wrapper {
+    display: flex;
+    /* min-height: 300px; */
+  }
+
+  .current-weather-body {
+    padding: 1.5rem;
+  }
+
+  .skyline-container {
+    max-height: 500px;
+    /* border: 1px solid red; test */
+  }
+
+  .dallas-skyline {
+     width: 100%;
+    height: 100%;
+  }
+  .skyline-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .current-weather-header {
+    padding: 1rem;
+  }
+
+  .current-weather-content-wrapper {
+    min-height: 280px;
+  }
+
+  .current-weather-body {
+    padding: 1rem;
+  }
+
+  .temperature-display {
+    gap: 0.05rem;
+  }
+
+  .condition-text, .wind-speed {
+    font-size: .9rem;
+  }
+
+  .toggle-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  .skyline-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .dallas-skyline {
+    width: 100%;
+    height: 100%;
+  }
+}

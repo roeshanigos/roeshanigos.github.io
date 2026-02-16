@@ -1,0 +1,139 @@
+.navbar {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  opacity: 1;
+}
+
+.navbar-container {
+  margin: 0 auto;
+  padding: 1rem clamp(1rem, 5vw, 5rem);
+  display: flex;
+  align-items: left;
+  justify-content: space-between; 
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+
+.brand-text {
+  color: #4BA3D1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+}
+
+/* Search Section */
+.navbar-search {
+  flex: 1;
+  max-width: 800px;
+
+}
+
+.navbar-search .city-search {
+  margin: 0;
+  max-width: 100%;
+}
+
+.navbar-search .search-form {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+  font-size: 2rem;
+}
+.brand-icon {
+  font-size: 2rem;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 1250px) {
+  .navbar-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .navbar-header {
+    display: none;
+  }
+
+  .brand-text {
+    font-size: 1.25rem;
+  }
+
+.navbar-search {
+  flex: 1;
+  max-width: 800px;
+
+}
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+  font-size: 2rem;
+}
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .navbar-container {
+    /* border: 1px solid red; */
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .navbar-header {
+    display: none;
+  }
+
+  .brand-text {
+    font-size: 1.25rem;
+  }
+
+  /* Search Section */
+.navbar-search {
+  flex: 1;
+  max-width: 800px;
+}
+
+.navbar-search .city-search {
+  margin: 0;
+  max-width: 100%;
+}
+
+.navbar-search .search-form {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-actions {
+  display: flex;
+  padding-top: .25rem;
+}
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .brand-icon {
+    font-size: 1.5rem;
+  }
+
+  .brand-text {
+    font-size: 1.1rem;
+  }
+
+  .navbar-search {
+    flex: 1;
+    max-width: 800px;
+  }
+}
