@@ -124,7 +124,7 @@
     background: rgba(255, 255, 255, 0);
   }
   12%, 17% {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(234, 232, 232, 0.4);
     box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
   }
 }
@@ -178,7 +178,7 @@
   }
 
   .snowflake {
-    font-size: 12px !important;
+    font-size: 12px;
   }
 }
 
