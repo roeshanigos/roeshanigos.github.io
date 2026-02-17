@@ -28,20 +28,20 @@
 
 .cloud-1 {
   top: 10%;
-  animation-duration: 20s;
+  animation-duration: 15s;
   animation-delay: 0s;
 }
 
 .cloud-2 {
   top: 25%;
-  animation-duration: 30s;
-  animation-delay: 5s;
+  animation-duration: 20s;
+  animation-delay: 2s;
 }
 
 .cloud-3 {
   top: 40%;
-  animation-duration: 25s;
-  animation-delay: 10s;
+  animation-duration: 15s;
+  animation-delay: 5s;
 }
 
 @keyframes moveCloud {
@@ -69,14 +69,14 @@
   top: -10%;
   width: 2px;
   height: 20px;
-  background: linear-gradient(to bottom, transparent, rgba(174, 194, 224, 0.8));
+  background: linear-gradient(to bottom, rgba(174, 194, 224, 0.8));
   animation: fall linear infinite;
 }
 
 .raindrop.heavy {
   width: 3px;
   height: 30px;
-  background: linear-gradient(to bottom, transparent, rgba(174, 194, 224, 0.9));
+  background: linear-gradient(to bottom, rgba(174, 194, 224, 0.9));
 }
 
 @keyframes fall {
