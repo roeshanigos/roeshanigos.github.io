@@ -34,11 +34,11 @@ const CurrentWeatherCard = ({ currentWeather, isCelsius, onToggle }) => {
         </div>
         <div className="skyline-container">
           <img 
-          src={`/src/assets/${cityTrim}.png`}
+          src={`/assets/${cityTrim}.png`}
           alt={cityTrim}
           className="dallas-skyline"
           onError={(e) => {
-          e.target.src = '/src/assets/City.png'; // Fallback is a generic city image
+          e.target.src = '/assets/City.png'; // Fallback is a generic city image
       }}
     />
         </div>

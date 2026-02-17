@@ -7,7 +7,7 @@ const CityAndDate = ({ currentWeather}) => {
    <div className="city-date-container">
         <div className="location">
           <span className="location-icon"> <img 
-            src="/src/assets/location-pin.png" 
+            src="/assets/location-pin.png" 
             alt="Location Icon" 
           /></span>
           <span className="location-name">{city}</span>
