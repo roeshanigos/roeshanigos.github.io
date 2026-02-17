@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Navbar from './components/NavBar';
+import Navbar from './components/Navbar';
 import WeatherAnimation from './components/WeatherAnimation';
 import CurrentWeatherCard from './components/CurrentWeatherCard';
 import CityAndDate from './components/CityAndDate';
